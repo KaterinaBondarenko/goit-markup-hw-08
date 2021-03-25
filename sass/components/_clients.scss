@@ -1,0 +1,44 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-black;
+}
+
+.clients__list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.clients__list .item + .item {
+  margin-left: 30px;
+}
+
+.clients__link {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $social-icon-color;
+  border: 1px solid $social-icon-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: fill, border;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $blue;
+    border: 1px solid $blue;
+  }
+}
