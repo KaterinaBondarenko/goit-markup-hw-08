@@ -1,0 +1,56 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+
+  background-color: $text-white;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  top: 12px;
+  right: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  fill: #000000;
+  background-color: $text-white;
+
+  &:hover,
+  &:focus {
+    fill: $blue;
+  }
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.btn {
+  position: absolute;
+
+  top: 10px;
+  right: 15px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+}
