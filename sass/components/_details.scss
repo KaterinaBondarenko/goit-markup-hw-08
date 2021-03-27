@@ -4,12 +4,18 @@
 
 .details__title {
   font-weight: 700;
+
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $text-black;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 0.87;
+  }
 }
 
 .details__form {
@@ -164,11 +170,16 @@
   margin-left: 8px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 
   color: $blue;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbox__icon {

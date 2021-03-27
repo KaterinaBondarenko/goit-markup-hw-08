@@ -2,25 +2,44 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-left: calc(-1 * 30px);
-  margin-top: calc(-1 * 30px);
+  justify-content: center;
+
+  @media screen and (min-width: 767px) {
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+    justify-content: unset;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .job__item {
-  flex-basis: calc((1200px / 3) - 30px);
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 
-  margin-left: $list-item-gap;
-  margin-top: $list-item-gap;
+  @media screen and (min-width: 767px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 
-  border-radius: 1px solid #eeeeee;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 
-  transition-property: box-shadow;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
+  &:hover {
+    cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
