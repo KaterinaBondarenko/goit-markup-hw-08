@@ -3,18 +3,49 @@ footer {
 }
 
 footer .container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
 
   padding-top: 60px;
   padding-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: baseline;
+  }
 }
+
+// .footer__info {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     align-items: baseline;
+//   }
+// }
 
 .footer__logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
+  text-align: center;
   line-height: 1.2;
   letter-spacing: 0.03em;
 

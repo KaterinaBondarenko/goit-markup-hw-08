@@ -1,44 +1,125 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
+  margin-bottom: 30px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: $text-black;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
-  display: flex;
-  margin-top: 50px;
+  // display: flex;
+  //
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
-.clients__list .item + .item {
-  margin-left: 30px;
-}
+// .clients__list .item + .item {
+//   margin-left: 30px;
+// }
 
-.clients__link {
-  width: 170px;
-  height: 90px;
+.clients__item {
   display: flex;
-  justify-content: center;
+
   align-items: center;
-  fill: $social-icon-color;
-  border: 1px solid $social-icon-color;
-  box-sizing: border-box;
-  border-radius: 4px;
+  justify-content: center;
+  //   max-width: 210px;
+  height: 90px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $social-icon-color;
 
-  transition-property: fill, border;
+  fill: $social-icon-color;
+
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition-property: border-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
-  &:focus {
-    fill: $blue;
-    border: 1px solid $blue;
+  :focus {
+    border-color: $blue;
+
+    .clients__link {
+      color: $blue;
+    }
   }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-top: 30px;
+    margin-left: 30px;
+
+    flex-basis: calc(100% / 2 - 30px);
+
+    &:not(:last-child) {
+      margin-bottom: unset;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.clients__link {
+  // width: 170px;
+  // height: 90px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  color: $social-icon-color;
+  // border: 1px solid $social-icon-color;
+  // box-sizing: border-box;
+  // border-radius: 4px;
+
+  transition-property: color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // &:hover,
+  // &:focus {
+  //   fill: $blue;
+  //   border: 1px solid $blue;
+  // }
+}
+
+.clients-img {
+  fill: currentColor;
+  transition-property: fiil;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

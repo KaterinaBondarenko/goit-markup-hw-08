@@ -16,11 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!-- header====================================================================== -->
 
-    <header>
+    <!-- <header>
       <div class="container site">
         <nav class="nav">
           <a class="nav__logo" href="./index.html">Web<span>Studio</span> </a>
@@ -64,16 +65,14 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- hero====================================================================== -->
 
       <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero__btn btn" data-open-modal>Заказать услугу</button>
-        </div>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero__btn btn" data-open-modal>Заказать услугу</button>
       </section>
 
       <!-- benefits================================================================== -->
@@ -144,8 +143,8 @@
 
       <!-- work====================================================================== -->
 
-      <section class="work">
-        <div class="container">
+      <section class="mobile__work">
+        <div class="container work">
           <h2 class="work__title title">Чем мы занимаемся</h2>
           <ul class="work__list list">
             <li class="work__item item">
@@ -174,6 +173,7 @@
           <ul class="team__list list">
             <li class="team__item item">
               <img
+                class="team__img"
                 src="./images/igor_demyanenko.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
@@ -216,6 +216,7 @@
 
             <li class="team__item item">
               <img
+                class="team__img"
                 src="./images/olga_repina.jpg"
                 alt="Ольга Репина"
                 width="270"
@@ -258,6 +259,7 @@
 
             <li class="team__item item">
               <img
+                class="team__img"
                 src="./images/nikolay_tarasov.jpg"
                 alt="Николай Тарасов"
                 width="270"
@@ -300,6 +302,7 @@
 
             <li class="team__item item">
               <img
+                class="team__img"
                 src="./images/mikhail_ermakov.jpg"
                 alt="Михаил Ермаков"
                 width="270"
@@ -351,7 +354,7 @@
           <ul class="clients__list">
             <li class="clients__item item">
               <a href="#" class="clients__link">
-                <svg width="44" height="50">
+                <svg class="clients-img" width="44" height="50">
                   <use href="./images/sprite.svg#icon-ya_co"></use>
                 </svg>
               </a>
@@ -359,7 +362,7 @@
 
             <li class="clients__item item">
               <a href="#" class="clients__link">
-                <svg width="40" height="52">
+                <svg class="clients-img" width="40" height="52">
                   <use href="./images/sprite.svg#icon-tagline_here"></use>
                 </svg>
               </a>
@@ -367,7 +370,7 @@
 
             <li class="clients__item item">
               <a href="#" class="clients__link">
-                <svg width="41" height="42">
+                <svg class="clients-img" width="41" height="42">
                   <use href="./images/sprite.svg#icon-company"></use>
                 </svg>
               </a>
@@ -375,7 +378,7 @@
 
             <li class="clients__item item">
               <a href="#" class="clients__link">
-                <svg width="79" height="42">
+                <svg class="clients-img" width="79" height="42">
                   <use href="./images/sprite.svg#icon-foster_peters"></use>
                 </svg>
               </a>
@@ -383,7 +386,7 @@
 
             <li class="clients__item item">
               <a href="#" class="clients__link">
-                <svg width="59" height="47">
+                <svg class="clients-img" width="59" height="47">
                   <use href="./images/sprite.svg#icon-brand"></use>
                 </svg>
               </a>
@@ -391,7 +394,7 @@
 
             <li class="clients__item item">
               <a href="#" class="clients__link">
-                <svg width="88" height="45">
+                <svg class="clients-img" width="88" height="45">
                   <use href="./images/sprite.svg#icon-tag_line"></use>
                 </svg>
               </a>
@@ -472,7 +475,7 @@
 
     <!-- modal======================================================================= -->
 
-    <div class="backdrop is-hidden" data-backdrop>
+    <!-- <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
         <button class="close__btn" data-close-modal>
           <svg class="close__icon" width="18" height="18">
@@ -566,7 +569,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
     <script>
       const refs = {
         openModalBtn: document.querySelector('[data-open-modal]'),
