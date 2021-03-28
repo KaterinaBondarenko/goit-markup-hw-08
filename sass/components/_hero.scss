@@ -12,12 +12,55 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    // url(../images/people_header.jpg);
-;
+    url(/images/people_header_mob.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #2f303a;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(47, 48, 58, 0.064) 0%,
+        rgba(47, 48, 58, 0) 100%
+      ),
+      url(/images/people_header_mob@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/people_header_tab.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2f303a;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(47, 48, 58, 0.064) 0%,
+          rgba(47, 48, 58, 0) 100%
+        ),
+        url(/images/people_header_tab@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -28,11 +71,25 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/people_header.jpg);
+      url(/images/people_header.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #2f303a;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(47, 48, 58, 0.064) 0%,
+          rgba(47, 48, 58, 0) 100%
+        ),
+        url(/images/people_header@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
   }
 }
 
@@ -62,9 +119,9 @@
 }
 
 .hero__btn {
-  // display: flex;
-  // margin-left: auto;
-  // margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   padding: 10px 32px;
 

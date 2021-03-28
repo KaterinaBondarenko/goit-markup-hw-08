@@ -21,6 +21,10 @@
   letter-spacing: 0.03em;
 
   color: $text-black;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .team__list {
