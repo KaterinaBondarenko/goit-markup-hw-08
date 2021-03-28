@@ -119,8 +119,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -131,16 +129,18 @@ header {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__link:hover, .nav__link:focus {
-  color: #2196f3;
-}
-
 .nav__item .nav__link {
   color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact__item .nav__link {
   color: #757575;
+}
+
+.nav__link:hover, .nav__link:focus {
+  color: #2196f3;
 }
 
 .nav__link.current {
@@ -163,39 +163,71 @@ header {
 }
 
 .site,
-.nav,
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.nav__list .item + .item,
-.contact__list .item + .item {
+.nav__list .item + .item {
   margin-left: 50px;
 }
 
-.nav__list {
-  margin-left: 88;
+.contact__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
-@media screen and (min-width: 768px) {
-  .nav__list {
-    margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .contact__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contact__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    margin-top: 0;
+    margin-left: 50px;
   }
 }
 
 .contact__item .contact__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.contact__icon .contact__item:hover,
-.contact__icon .contact__item:focus {
-  fill: #2196f3;
 }
 
 .menu-container {
