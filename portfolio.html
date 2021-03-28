@@ -37,11 +37,11 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item item">
-              <a class="nav__link current" href="./index.html">Студия</a>
+              <a class="nav__link" href="./index.html">Студия</a>
             </li>
 
             <li class="nav__item item">
-              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link current" href="./portfolio.html">Портфолио</a>
             </li>
 
             <li class="nav__item item">
@@ -113,6 +113,10 @@
               <div class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/techno_crack.jpg    1x,
+                      ./images/techno_crack@2x.jpg 2x
+                    "
                     src="./images/techno_crack.jpg"
                     alt="Технокряк"
                     width="370"
@@ -137,6 +141,10 @@
               <div href="" class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/new_orlean_vs_golden_star_poster.jpg    1x,
+                      ./images/new_orlean_vs_golden_star_poster@2x.jpg 2x
+                    "
                     src="./images/new_orlean_vs_golden_star_poster.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
@@ -163,6 +171,10 @@
               <div href="" class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/seafood_restaurant.jpg    1x,
+                      ./images/seafood_restaurant@2x.jpg 2x
+                    "
                     src="./images/seafood_restaurant.jpg"
                     alt="Ресторан Seafood"
                     width="370"
@@ -187,6 +199,10 @@
               <a href="" class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/prime_project.jpg    1x,
+                      ./images/prime_project@2x.jpg 2x
+                    "
                     src="./images/prime_project.jpg"
                     alt="Проект Prime"
                     width="370"
@@ -211,6 +227,10 @@
               <div href="" class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/boxes_project.jpg    1x,
+                      ./images/boxes_project@2x.jpg 2x
+                    "
                     src="./images/boxes_project.jpg"
                     alt="Проект Boxes"
                     width="370"
@@ -235,6 +255,10 @@
               <div href="" class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/inspiration_has_no_borders.jpg    1x,
+                      ./images/inspiration_has_no_borders@2x.jpg 2x
+                    "
                     src="./images/inspiration_has_no_borders.jpg"
                     alt="Inspiration has no Borders"
                     width="370"
@@ -259,6 +283,10 @@
               <div href="" class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/limited_edition.jpg    1x,
+                      ./images/limited_edition@2x.jpg 2x
+                    "
                     src="./images/limited_edition.jpg"
                     alt="Издание Limited Edition"
                     width="370"
@@ -283,6 +311,10 @@
               <div href="" class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/lab_project.jpg    1x,
+                      ./images/lab_project@2x.jpg 2x
+                    "
                     src="./images/lab_project.jpg"
                     alt="Проект LAB"
                     width="370"
@@ -307,6 +339,10 @@
               <div href="" class="card">
                 <div class="card__thumb">
                   <img
+                    srcset="
+                      ./images/growing_business.jpg    1x,
+                      ./images/growing_business@2x.jpg 2x
+                    "
                     src="./images/growing_business.jpg"
                     alt="Growing Business"
                     width="370"
@@ -399,5 +435,56 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle button js-close-menu">
+        <svg class="mobile__icon" width="44" height="44">
+          <use href="./images/sprite.svg#icon-close_menu"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile__nav">
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a class="mobile__link current__mobile" href="index.html">Студия</a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile__list--contacts">
+          <li class="mobile__item--contacts">
+            <a class="mobile__link--number" href="+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile__item--contacts">
+            <a class="mobile__link--mail" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile__socials--list">
+        <li class="mobile__socials--item">
+          <a class="mobile__socials--link" href="#">Instagram</a>
+        </li>
+        <li class="mobile__socials--item">
+          <a class="mobile__socials--link" href="#">Twitter</a>
+        </li>
+        <li class="mobile__socials--item">
+          <a class="mobile__socials--link" href="#">Facebook</a>
+        </li>
+        <li class="mobile__socials--item">
+          <a class="mobile__socials--link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
