@@ -52,6 +52,11 @@
   position: relative;
   overflow: hidden;
 
+  img {
+    height: 294px;
+    object-fit: cover;
+  }
+
   &:hover::before {
     opacity: 1;
   }

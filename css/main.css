@@ -1377,6 +1377,12 @@ footer .container {
   overflow: hidden;
 }
 
+.card__thumb img {
+  height: 294px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card__thumb:hover::before {
   opacity: 1;
 }
