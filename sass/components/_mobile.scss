@@ -24,6 +24,12 @@
   }
 }
 
+.mobile__list--contacts {
+  position: absolute;
+  left: 40px;
+  bottom: 134px;
+}
+
 .mobile__item--contacts {
   margin-bottom: 32px;
 
@@ -51,6 +57,9 @@
 
 .mobile__socials--list {
   display: flex;
+  position: absolute;
+  left: 40px;
+  bottom: 48px;
 }
 
 .mobile__socials--item {
