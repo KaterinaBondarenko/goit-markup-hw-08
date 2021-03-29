@@ -30,13 +30,10 @@
   bottom: 134px;
 }
 
-.mobile__item--contacts {
-  margin-bottom: 32px;
+// .mobile__item--contacts {
+//   margin-bottom: 32px;
 
-  &:last-child {
-    margin-bottom: 64px;
-  }
-}
+// }
 
 .mobile__link--number {
   font-weight: 500;
@@ -58,6 +55,7 @@
 .mobile__socials--list {
   display: flex;
   position: absolute;
+  flex-wrap: wrap;
   left: 40px;
   bottom: 48px;
 }

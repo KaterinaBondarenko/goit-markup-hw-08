@@ -330,14 +330,6 @@ header {
   bottom: 134px;
 }
 
-.mobile__item--contacts {
-  margin-bottom: 32px;
-}
-
-.mobile__item--contacts:last-child {
-  margin-bottom: 64px;
-}
-
 .mobile__link--number {
   font-weight: 500;
   font-size: 34px;
@@ -359,6 +351,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   left: 40px;
   bottom: 48px;
 }
